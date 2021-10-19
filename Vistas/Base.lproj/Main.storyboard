@@ -124,7 +124,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1vz-FW-TQo"/>
-                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
                         <constraints>
                             <constraint firstItem="6d8-f4-UsB" firstAttribute="top" secondItem="1vz-FW-TQo" secondAttribute="top" constant="70" id="Mnw-md-UHW"/>
                             <constraint firstAttribute="trailing" secondItem="6d8-f4-UsB" secondAttribute="trailing" constant="30" id="Q6g-yd-vAn"/>
@@ -142,6 +142,9 @@
         <image name="rickmorty" width="640" height="322"/>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
