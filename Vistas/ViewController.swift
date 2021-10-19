@@ -12,9 +12,8 @@ class ViewController: UIViewController {
     }
 
     @IBAction func aceptarClic(_ sender: UIButton) {
-        print("clic en botón cambiar")
         let texto = nombre.text ?? "persona"
-        saludo.text = "Hola \(texto)"
+        saludo.text = "Hola \(texto)!"
     }
 
 }
