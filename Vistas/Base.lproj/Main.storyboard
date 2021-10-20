@@ -28,7 +28,7 @@
                                 </state>
                                 <connections>
                                     <action selector="aceptarClic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HAk-LA-7fx"/>
-                                    <segue destination="ZYH-yp-UsZ" kind="show" id="SIZ-A8-ZiG"/>
+                                    <segue destination="ZYH-yp-UsZ" kind="show" id="e2B-BQ-fwf"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Escribe tu nombre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ydY-Dl-8JN">
@@ -80,16 +80,16 @@
             </objects>
             <point key="canvasLocation" x="-138" y="138"/>
         </scene>
-        <!--View Controller-->
+        <!--Orange View Controller-->
         <scene sceneID="94a-YF-G6X">
             <objects>
-                <viewController id="ZYH-yp-UsZ" sceneMemberID="viewController">
+                <viewController id="ZYH-yp-UsZ" customClass="OrangeViewController" customModule="Vistas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gY7-Np-9hU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="6d8-f4-UsB">
-                                <rect key="frame" x="30" y="70" width="354" height="398.5"/>
+                                <rect key="frame" x="30" y="70" width="354" height="464.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hola" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cVF-yW-yZR">
                                         <rect key="frame" x="150" y="0.0" width="54" height="32.5"/>
@@ -110,14 +110,23 @@
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Xg-Dc-DdA">
-                                        <rect key="frame" x="134.5" y="356.5" width="85" height="42"/>
+                                        <rect key="frame" x="143" y="356.5" width="68" height="42"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <state key="normal" title="Aceptar">
+                                        <state key="normal" title="Cerrar">
                                             <color key="titleColor" systemColor="systemYellowColor"/>
                                         </state>
                                         <connections>
                                             <action selector="aceptarClic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Atn-aM-d8E"/>
+                                            <action selector="closeButton:" destination="ZYH-yp-UsZ" eventType="touchUpInside" id="3gJ-1x-5Nm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cId-8E-e3b">
+                                        <rect key="frame" x="107" y="428.5" width="140" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Ir a otra pantalla"/>
+                                        <connections>
+                                            <action selector="goToYellowButton:" destination="ZYH-yp-UsZ" eventType="touchUpInside" id="VJD-Yi-tKQ"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -132,10 +141,30 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="L91-ym-wlC"/>
+                    <connections>
+                        <outlet property="nameTextField" destination="6ei-zH-c8A" id="wsH-dg-XMh"/>
+                        <segue destination="KSk-IX-jkd" kind="show" identifier="goToYellow" id="MyM-Ut-Qfv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zfR-6p-aKi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="971" y="138"/>
+            <point key="canvasLocation" x="701" y="138"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="crn-7L-Qx0">
+            <objects>
+                <viewController id="KSk-IX-jkd" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zDp-Cv-L2m">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="lRe-tX-PfT"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="eVK-sM-1eJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="38I-0t-Vb3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1501" y="139"/>
         </scene>
     </scenes>
     <resources>

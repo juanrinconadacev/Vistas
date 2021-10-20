@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F775156272022A900578052 /* OrangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F775155272022A900578052 /* OrangeViewController.swift */; };
 		7F7912E42716DD24006D6116 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7912E32716DD24006D6116 /* AppDelegate.swift */; };
 		7F7912E62716DD24006D6116 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7912E52716DD24006D6116 /* SceneDelegate.swift */; };
 		7F7912E82716DD24006D6116 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7912E72716DD24006D6116 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7F775155272022A900578052 /* OrangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrangeViewController.swift; sourceTree = "<group>"; };
 		7F7912E02716DD24006D6116 /* Vistas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vistas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F7912E32716DD24006D6116 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F7912E52716DD24006D6116 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				7F7912E32716DD24006D6116 /* AppDelegate.swift */,
 				7F7912E52716DD24006D6116 /* SceneDelegate.swift */,
 				7F7912E72716DD24006D6116 /* ViewController.swift */,
+				7F775155272022A900578052 /* OrangeViewController.swift */,
 				7F7912E92716DD24006D6116 /* Main.storyboard */,
 				7F7912EC2716DD25006D6116 /* Assets.xcassets */,
 				7F7912EE2716DD25006D6116 /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F775156272022A900578052 /* OrangeViewController.swift in Sources */,
 				7F7912E82716DD24006D6116 /* ViewController.swift in Sources */,
 				7F7912E42716DD24006D6116 /* AppDelegate.swift in Sources */,
 				7F7912E62716DD24006D6116 /* SceneDelegate.swift in Sources */,
