@@ -28,7 +28,7 @@
                                 </state>
                                 <connections>
                                     <action selector="aceptarClic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HAk-LA-7fx"/>
-                                    <segue destination="ZYH-yp-UsZ" kind="show" id="e2B-BQ-fwf"/>
+                                    <segue destination="ZYH-yp-UsZ" kind="presentation" modalPresentationStyle="fullScreen" id="e2B-BQ-fwf"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Escribe tu nombre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ydY-Dl-8JN">
@@ -85,11 +85,11 @@
             <objects>
                 <viewController id="ZYH-yp-UsZ" customClass="OrangeViewController" customModule="Vistas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gY7-Np-9hU">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="6d8-f4-UsB">
-                                <rect key="frame" x="30" y="70" width="354" height="464.5"/>
+                                <rect key="frame" x="30" y="114" width="354" height="464.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hola" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cVF-yW-yZR">
                                         <rect key="frame" x="150" y="0.0" width="54" height="32.5"/>
@@ -150,17 +150,32 @@
             </objects>
             <point key="canvasLocation" x="701" y="138"/>
         </scene>
-        <!--View Controller-->
+        <!--Yellow View Controller-->
         <scene sceneID="crn-7L-Qx0">
             <objects>
-                <viewController id="KSk-IX-jkd" sceneMemberID="viewController">
+                <viewController id="KSk-IX-jkd" customClass="YellowViewController" customModule="Vistas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zDp-Cv-L2m">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hola" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oaX-oD-Das">
+                                <rect key="frame" x="177" y="403" width="60" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="lRe-tX-PfT"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="oaX-oD-Das" firstAttribute="centerX" secondItem="zDp-Cv-L2m" secondAttribute="centerX" id="13m-D8-iiA"/>
+                            <constraint firstItem="oaX-oD-Das" firstAttribute="centerY" secondItem="zDp-Cv-L2m" secondAttribute="centerY" id="zSt-YP-Ivb"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="eVK-sM-1eJ"/>
+                    <connections>
+                        <outlet property="saludo" destination="oaX-oD-Das" id="zp7-BS-nwY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="38I-0t-Vb3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

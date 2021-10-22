@@ -23,4 +23,9 @@ class OrangeViewController: UIViewController {
     func goToYellow() {
         performSegue(withIdentifier: "goToYellow", sender: nil)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destination = segue.destination as! YellowViewController
+        destination.name = nameTextField.text
+    }
 }
