@@ -17,17 +17,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJm-AK-HoF">
-                                <rect key="frame" x="164.5" y="523" width="85" height="50"/>
+                                <rect key="frame" x="103.5" y="523" width="207" height="50"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Cdi-xw-j5U"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Aceptar">
+                                <state key="normal" title="Ir a pantalla naranja">
                                     <color key="titleColor" systemColor="systemYellowColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="aceptarClic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HAk-LA-7fx"/>
                                     <segue destination="ZYH-yp-UsZ" kind="presentation" modalPresentationStyle="fullScreen" id="e2B-BQ-fwf"/>
                                 </connections>
                             </button>
@@ -38,6 +37,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="nameChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="pqf-XG-Jhz"/>
+                                </connections>
                             </textField>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" image="rickmorty" translatesAutoresizingMaskIntoConstraints="NO" id="Ezt-jw-XXx">
                                 <rect key="frame" x="117.5" y="294" width="179" height="179"/>
@@ -72,7 +74,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="lyG-P1-K3M"/>
                     <connections>
-                        <outlet property="nombre" destination="ydY-Dl-8JN" id="DNY-VO-PHJ"/>
                         <outlet property="saludo" destination="t5x-r8-Uoc" id="3b8-ZK-P6e"/>
                     </connections>
                 </viewController>
@@ -117,7 +118,6 @@
                                             <color key="titleColor" systemColor="systemYellowColor"/>
                                         </state>
                                         <connections>
-                                            <action selector="aceptarClic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Atn-aM-d8E"/>
                                             <action selector="closeButton:" destination="ZYH-yp-UsZ" eventType="touchUpInside" id="3gJ-1x-5Nm"/>
                                         </connections>
                                     </button>
