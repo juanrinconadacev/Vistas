@@ -15,6 +15,7 @@
 		7F7912EB2716DD24006D6116 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F7912E92716DD24006D6116 /* Main.storyboard */; };
 		7F7912ED2716DD25006D6116 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F7912EC2716DD25006D6116 /* Assets.xcassets */; };
 		7F7912F02716DD25006D6116 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F7912EE2716DD25006D6116 /* LaunchScreen.storyboard */; };
+		7F895B692729599B000AB396 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F895B682729599B000AB396 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		7F7912EC2716DD25006D6116 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F7912EF2716DD25006D6116 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F7912F12716DD25006D6116 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F895B682729599B000AB396 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				7F7912EC2716DD25006D6116 /* Assets.xcassets */,
 				7F7912EE2716DD25006D6116 /* LaunchScreen.storyboard */,
 				7F7912F12716DD25006D6116 /* Info.plist */,
+				7F895B682729599B000AB396 /* User.swift */,
 			);
 			path = Vistas;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 			files = (
 				7F775156272022A900578052 /* OrangeViewController.swift in Sources */,
 				7F7912E82716DD24006D6116 /* ViewController.swift in Sources */,
+				7F895B692729599B000AB396 /* User.swift in Sources */,
 				7F7912E42716DD24006D6116 /* AppDelegate.swift in Sources */,
 				7F7912E62716DD24006D6116 /* SceneDelegate.swift in Sources */,
 				7F77E0912722A28200D96E69 /* YellowViewController.swift in Sources */,
